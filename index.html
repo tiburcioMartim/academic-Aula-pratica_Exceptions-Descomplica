@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Utilizando classes, herança, exceções</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="formulario__conteiner">
+        <h1>Preencha seus dados</h1>
+        <hr>
+        <form id="formulario_Funcionarios">
+            <div class="formulario__content flex-c">
+                <label for="form_Name">Nome</label>
+                <input type="text" name="form_Name" id="form_Name" placeholder="Digite seu nome" required>
+            </div>
+
+            <div class="formulario__content flex-c">
+                <label for="form_idade">Idade</label>
+                <input type="number" name="form_idade" id="form_idade" placeholder="Digite sua idade" required>
+            </div>
+
+            <div class="formulario__content">
+                <label>Cargo</label>
+                <div class="formulario__content--radio"><input type="radio" name="Cargo" id="Funcionario"
+                        class="inputRadio"><label for="Funcionario">Funcionario</label></div>
+                <div class="formulario__content--radio"><input type="radio" name="Cargo" id="Gerente"
+                        class="inputRadio"><label for="Gerente">Gerente</label></div>
+                <div class="formulario__content--radio"><input type="radio" name="Cargo" id="Desenvolvedor"
+                        class="inputRadio" checked><label for="Desenvolvedor">Desenvolvedor</label>
+                </div>
+            </div>
+
+            <div class="formulario__content">
+                <label>Departamento</label>
+                <div class="formulario__content--radio"><input type="radio" name="Departamento" id="Pessoal"
+                        class="inputRadio"><label for="Pessoal">Pessoal</label></div>
+                <div class="formulario__content--radio"><input type="radio" name="Departamento" id="Financeiro"
+                        class="inputRadio"><label for="Financeiro">Financeiro</label></div>
+                <div class="formulario__content--radio"><input type="radio" name="Departamento" id="TI"
+                        class="inputRadio" checked><label for="TI">TI</label>
+                </div>
+            </div>
+
+            <div class="formulario__content">
+                <label>Linguagem</label>
+                <div class="formulario__content--radio"><input type="radio" name="Linguagem" id="Javascript"
+                        class="inputRadio">
+                    <label for="Javascript">Javascript</label>
+                </div>
+
+                <div class="formulario__content--radio"><input type="radio" name="Linguagem" id="Python"
+                        class="inputRadio">
+                    <label for="Python">Python</label>
+                </div>
+
+                <div class="formulario__content--radio"><input type="radio" name="Linguagem" id="Java"
+                        class="inputRadio" checked>
+                    <label for="Java">Java</label>
+                </div>
+            </div>
+
+            <button type="submit">Cadastrar</button>
+        </form>
+    </div>
+
+    <div id="formulario_Resultados">
+
+    </div>
+
+    <footer>
+        <p>Desenvolvido por <a href="https://www.linkedin.com/in/tiburcioMartim/"><strong>Martim Tiburcio</strong></a>.
+        </p>
+    </footer>
+</body>
+<script src="script.js"></script>
+
+</html>
